@@ -19,7 +19,6 @@ object APIService {
             Request.Method.GET, url, null,
             { response ->
                 try {
-                    // Haal de "quote" string uit het JSON object
                     val quote = response.getString("quote")
                     continuation.resume(quote)
                 } catch (e: Exception) {

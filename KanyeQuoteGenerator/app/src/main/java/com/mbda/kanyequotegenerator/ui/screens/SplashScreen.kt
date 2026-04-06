@@ -79,9 +79,8 @@ fun SplashScreen(onTimeout: () -> Unit) {
 
             Spacer(modifier = Modifier.height(50.dp))
 
-            // Oranje ProgressView equivalent
             CircularProgressIndicator(
-                color = Color(0xFFFFA500), // Orange
+                color = Color(0xFFFFA500),
                 modifier = Modifier.size(40.dp)
             )
         }
